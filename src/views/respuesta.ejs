@@ -1,0 +1,40 @@
+<% include partials/_header%>
+<div class="col-md-5">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>VAN</th>
+                <th>TIR</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><%=van%></td>
+                <td><%=tir%></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+<div class="col-md-7">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>N°</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <%for (let i = 0;i < fne.length;i++){%>
+                <tr>
+                    <td>FNE<%=i+1%></td>
+                    <td><%=fne[i]%></td>
+                </tr>
+            <%}%>
+        </tbody>
+    </table>
+</div>
+
+<%include partials/_footer%>

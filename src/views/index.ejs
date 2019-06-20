@@ -1,0 +1,64 @@
+<% include partials/_header%>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="card">
+                <div class="card-body">
+                    <form action="/add" method="POST">
+                        <h4>Ingrese los datos</h4>
+                        <br>
+                        <div class="form-group">
+                            <label for="nroPeriodos">Numero de periodos:</label>
+                            <input type="text" name="nroPeriodos" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="inversionInicial">Inversion inicial:</label>
+                            <input type="text" name="inversionInicial" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="salvamento">Valor de salvamento:</label>
+                            <input type="text" name="salvamento" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="tasaDescuento">Porcentaje de tasa de descuento/interes/etc:</label>
+                            <input type="text" name="tasaDescuento" class="form-control">
+                        </div>
+                        <h5>Datos flujo neto de efectivo</h5>
+                        <br>
+                        
+                        <div class="form-group">
+                            <label for="ingresos">Ingresos:</label>
+                            <input type="text" name="ingresos" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="incrementoAnualIngresos">Porcentaje incremento anual de ingresos:</label>
+                            <input type="text" name="incrementoAnualIngresos" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="produccion">Costos de produccion:</label>
+                            <input type="text" name="produccion" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="costosAdministracion">Costos de administracion:</label>
+                            <input type="text" name="costosAdministracion" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="costosVentas">Costos de ventas:</label>
+                            <input type="text" name="costosVentas" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="impuestos">Impuestos a la utilidades:</label>
+                            <input type="text" name="impuestos" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Calcular VAN y TIR</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div> 
+</div>
+
+<% include partials/_footer%>
